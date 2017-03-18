@@ -1,25 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Ash Price</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
       <!-- Do not add `link` tags unless you know what you are doing -->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Mr+Dafoe|Raleway|Shadows+Into+Light+Two|Ubuntu" rel="stylesheet">
+
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+      <!-- Font Awesome links -->
+      <script src="https://use.fontawesome.com/25c6c08225.js"></script>
+    </head>
+
+
+
+    <body class="container-fluid">
+
+      <div class="container">
+	       <div id="splitlayout" class="splitlayout"> <!-- This box holds the left and right boxes -->
+		         <div class="intro">
+			<div class="side side-left">
+				<div class="intro-content rw-wrapper" id="movingWords">
+					<!-- <div class="profile-pic"><img src="img/profile1.jpg" alt="profile1"></div> -->
+					<h1 class="rw-sentence"><span>Ashlen</span></h1>
+          <h1 class="family-name rw-sentence"><span>Price</span></h1>
+            <span>Full-Stack Web Developer<br></span
+            <div class="rw-words rw-words-1">
+              <span>Fun-Enthusiast</span>
+              <span>Mother of two</span>
+              <span>Music Afficinada</span>
+              <span>Creative</span>
+
+            </div>
+          </h2>
+				</div>
+        <!-- Overlay on left side blue -->
+				<div class="overlay"></div>
+			</div>
+
+			<div class="side side-right">
+				<div class="portfolio-content">
+          <header>
+          <nav>
+            <ul>
+
+              <li><i class="fa fa-camera-retro fa-lg"></i><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="mailto:ashlen.price@gmail.com">Hire Me!</a></li>
+              <li><a href="https://github.com/ashlenprice">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+					<!-- <div class="portflio"><img src="img/profile2.jpg" alt="profile2"></div> -->
+				</div>
+				<div class="overlay"></div>
+
+			</div>
+		</div>
+
+    <!-- /intro -->
+		<div class="page page-right page-large">
+			<div class="page-inner">
+
+				<section>
+          <!-- ===========================
+          PORTFOLIO SECTION START
+          =========================== -->
+          <div id="portfolio">
+              <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+                <span class="bigicon icon-rocket"></span>
+                 <h3>A few recent works</h3>
+                 <hr class="separetor">
+              </div><!-- PORTFOLIO SECTION HEAD END -->
+
+              <!-- PORTFOLIO ITEMS START -->
+              <div class="portfolioitems container">
+                  <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
+              </div><!-- PORTFOLIO ITEMS END -->
+
+              <!--Replace the URL below with your dribbble profile URL-->
+              <a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
+                  <span class="btnicon icon-social-dribbble"></span>
+                  <span class="button_text">View all items</span>
+              </a>
+          </div><!-- PORTFOLIO SECTION END -->
+				</section>
+				<section>
+					<!-- content -->
+				</section>
+				<!-- ... -->
+			</div><!-- /page-inner -->
+		</div><!-- /page-right -->
+		<div class="page page-left page-fill">
+			<div class="page-inner">
+				<!-- ... -->
+			</div><!-- /page-inner -->
+		</div><!-- /page-left -->
+		<a href="#" class="back back-right" title="back to intro">→</a>
+		<a href="#" class="back back-left" title="back to intro">←</a>
+	</div><!-- /splitlayout -->
+</div><!-- /container -->
     </body>
 </html>
