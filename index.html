@@ -1,113 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Ash Price</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      <!-- Do not add `link` tags unless you know what you are doing -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AshP</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Mr+Dafoe|Raleway|Shadows+Into+Light+Two|Ubuntu" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Mr+Dafoe|Raleway|Shadows+Into+Light+Two|Ubuntu" rel="stylesheet">
 
-      <!-- Do not add `script` tags unless you know what you are doing -->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <!-- Animate CSS CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-      <!-- Font Awesome links -->
-      <script src="https://use.fontawesome.com/25c6c08225.js"></script>
-    </head>
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <!-- Font Awesome links -->
+  <script src="https://use.fontawesome.com/25c6c08225.js"></script>
+</head>
 
 
+<body>
+  <!--This contains the entinre page  -->
+  <div class="wrapper">
+    <!-- Main contains the split screen   -->
+    <main class="flex-container">
+      <!-- Left side of the screen -->
+      <section class="left" id="west">
+        <!-- <img src="./img/bckg-half.png"/> -->
+        <!-- Container that houses my brand text -->
+        <div class="brand-box">
 
-    <body class="container-fluid">
+          <div class="brand">
+            <!-- First Name  -->
+            <div class="ash">
 
-      <div class="container">
-	       <div id="splitlayout" class="splitlayout"> <!-- This box holds the left and right boxes -->
-		         <div class="intro">
-			<div class="side side-left">
-				<div class="intro-content rw-wrapper" id="movingWords">
-					<!-- <div class="profile-pic"><img src="img/profile1.jpg" alt="profile1"></div> -->
-					<h1 class="rw-sentence"><span>Ashlen</span></h1>
-          <h1 class="family-name rw-sentence"><span>Price</span></h1>
-            <span>Full-Stack Web Developer<br></span
+              <p class="animated bounce">Ashlen</p>
+            </div>
+            <!--Last Name container -->
+            <div class="price">
+              <p>Price</p>
+            </div>
+
+          </div>
+          <!-- Houses rotating adjectives  -->
+          <div class="rw-wrapper">
             <div class="rw-words rw-words-1">
+              <span>Full-Stack Web Developer</span>
               <span>Fun-Enthusiast</span>
               <span>Mother of two</span>
               <span>Music Afficinada</span>
               <span>Creative</span>
-
             </div>
-          </h2>
-				</div>
-        <!-- Overlay on left side blue -->
-				<div class="overlay"></div>
-			</div>
+          </div>
+        </div>
 
-			<div class="side side-right">
-				<div class="portfolio-content">
-          <header>
+        <!-- Footer , sm & contact ifo -->
+        <footer>
+          <ul>
+          <li><a href= "https://github.com/AshlenPrice"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+
+          <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+          <li><a href="https://www.facebook.com/ashlen.price"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+          <li><a href="mailto:ashlen.price@gmail.com"<i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        <li>  Made by Ash!</li>
+        </ul>
+        </footer>
+      </section>
+
+    <!-- Right side of page -->
+      <section class="right" id="east">
+      <section class="right-container" id="">
+
+        <header>
           <nav>
             <ul>
-
-              <li><i class="fa fa-camera-retro fa-lg"></i><a href="#about">About Me</a></li>
+              <li><a href="#about">About Me</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="mailto:ashlen.price@gmail.com">Hire Me!</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="mailto:ashlen.price@gmail.com">Contact Me!</a></li>
               <li><a href="https://github.com/ashlenprice">GitHub</a></li>
-          </ul>
-        </nav>
-      </header>
-					<!-- <div class="portflio"><img src="img/profile2.jpg" alt="profile2"></div> -->
-				</div>
-				<div class="overlay"></div>
+            </ul>
+          </nav>
+        </header>
 
-			</div>
-		</div>
+        <section class="folio-body">
 
-    <!-- /intro -->
-		<div class="page page-right page-large">
-			<div class="page-inner">
+          <section id="about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
 
-				<section>
-          <!-- ===========================
-          PORTFOLIO SECTION START
-          =========================== -->
-          <div id="portfolio">
-              <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-                <span class="bigicon icon-rocket"></span>
-                 <h3>A few recent works</h3>
-                 <hr class="separetor">
-              </div><!-- PORTFOLIO SECTION HEAD END -->
+          <section id="skills">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
 
-              <!-- PORTFOLIO ITEMS START -->
-              <div class="portfolioitems container">
-                  <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
-              </div><!-- PORTFOLIO ITEMS END -->
+          <section id="portfolio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
 
-              <!--Replace the URL below with your dribbble profile URL-->
-              <a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
-                  <span class="btnicon icon-social-dribbble"></span>
-                  <span class="button_text">View all items</span>
-              </a>
-          </div><!-- PORTFOLIO SECTION END -->
-				</section>
-				<section>
-					<!-- content -->
-				</section>
-				<!-- ... -->
-			</div><!-- /page-inner -->
-		</div><!-- /page-right -->
-		<div class="page page-left page-fill">
-			<div class="page-inner">
-				<!-- ... -->
-			</div><!-- /page-inner -->
-		</div><!-- /page-left -->
-		<a href="#" class="back back-right" title="back to intro">→</a>
-		<a href="#" class="back back-left" title="back to intro">←</a>
-	</div><!-- /splitlayout -->
-</div><!-- /container -->
-    </body>
+          <section id="resume">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+
+          <section id="contact">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          </section>
+
+        </section><!-- close portfolio body section -->
+
+      </section>
+    </section><!-- close right side of pg section -->
+
+    </main>
+
+  </div>
+
+</body>
+
 </html>
