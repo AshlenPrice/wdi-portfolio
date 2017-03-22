@@ -7,7 +7,10 @@ html,
 body,
 .wrapper,
 main {
-  // display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -37,15 +40,17 @@ main {
 }
 
 .left {
+  flex: 1;
+  padding: 1em;
   width: 35vw;
   height: 100vh;
   align-items: center;
   background-image: url('../../img/bckg-half.png');
   background-size: cover;
   display: flex;
-  float: left;
-  clear: left;
-  position: fixed;
+  // float: left;
+  // clear: left;
+  // position: fixed;
   top: 0;
   justify-content: center;
 }
@@ -94,7 +99,7 @@ footer {
   background-color: $primary-color-text;
   border-top: 1px solid grey;
   color: gray;
-  display: inline-block;
+  // display: inline-block;
   padding: 20px;
   padding-bottom: 40px;
   position: fixed;
@@ -107,14 +112,18 @@ footer {
 
 footer > ul {
   list-style-type: none;
+  padding: 5px;
 }
 
 footer li {
   display: inline-flex;
-  padding: 0px;
+  padding: 5px;
   height: 10px;
-  width: 20px;
+  align-content: flex-start;
+  width: 40px;
+  overflow: visible;
 }
+
 
 //right side of the page
 
@@ -124,7 +133,8 @@ footer li {
   display: flex;
   float: right;
   clear: right;
-  justify-content: center;
+  overflow: scroll;
+  // justify-content: center;
   width: 65%;
   height: 100%;
 }
@@ -136,13 +146,57 @@ footer li {
 .folio-body {
 
 }
+.category {
+}
 
 #about {
 
 }
 
+#skills {
+
+}
+.icon {
+  font-size: 4em;
+}
+
 #portfolio {
 
+}
+.card {
+  background-color: white;
+  flex: 4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+.project {
+	float: left;
+	width: 45%;
+  margin: 10px;
+	padding: 0 25px;
+  clear: right;
+}
+
+
+project img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.project h3 {
+	margin: 0.75em 0 0.5em;
+}
+
+.project p {
+	padding: 0 0 1em 0;
+	margin: 0;
+	line-height: 1.3;
 }
 
 #resume {
@@ -164,6 +218,8 @@ footer li {
 }
 
 nav {
+  position: fixed;
+
 
 }
 
@@ -174,7 +230,7 @@ nav > ul{
 
 nav a {
   color: $primary-color-text;
-  display: inline-block;
+  // display: inline-block;
   font-size: 1em;
   padding: .5em .5em;
   transition: background 2s;
@@ -287,6 +343,7 @@ nav a:hover {
   80% { opacity: 0; }
     100% { opacity: 0; }
 }
+
 @keyframes rotateWords {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
@@ -308,6 +365,7 @@ nav a:hover {
 
 
 }
+
 
 // @media only screen and (min-width: 765px) {
 //   #about {
