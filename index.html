@@ -14,7 +14,7 @@
 
   <!-- Animate CSS CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-<!-- devicons  -->
+  <!-- devicons  -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
   <!-- Do not add `script` tags unless you know what you are doing -->
@@ -27,27 +27,19 @@
 
 
 <body>
-  <!--This contains the entinre page  -->
-  <div class="wrapper">
     <!-- Main contains the split screen   -->
-    <main class="flex-container">
+    <main class="flex-container container">
       <!-- Left side of the screen -->
-      <section class="left" id="west">
+      <aside class="left" id="west">
         <!-- <img src="./img/bckg-half.png"/> -->
         <!-- Container that houses my brand text -->
         <div class="brand-box">
 
           <div class="brand">
             <!-- First Name  -->
-            <div class="ash">
-
-              <h1 class="animated bounce">Ashlen</h1>
-            </div>
-            <!--Last Name container -->
-            <div class="price">
-              <h1>Price</h1>
-            </div>
-
+              <h1 class="ash animated bounce">Ashlen</h1>
+            <!--Last Name -->
+              <h1 class="price">Price</h1>
           </div>
           <!-- Houses rotating adjectives  -->
           <div class="rw-wrapper">
@@ -75,11 +67,10 @@
         <li>  Made by Ash!</li>
         </ul>
         </footer>
-      </section>
+      </aside>
 
     <!-- Right side of page -->
       <section class="right" id="east">
-      <section class="right-container" id="">
 
         <header>
           <nav>
@@ -94,10 +85,17 @@
           </nav>
         </header>
 
-        <section class="folio-body">
 
           <section class="category" id="about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </section>
 
           <section class="category" id="skills">
@@ -113,65 +111,78 @@
             <i class="icon devicon-nodejs-plain colored"></i>
             <i class="icon devicon-mongodb-plain-wordmark colored"></i>
             <i class="icon devicon-git-plain-wordmark colored"></i>
-
-
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </section>
 
           <section class="category" id="portfolio">
-            <a href="https://ashlenprice.github.io/tic-tac-toe/">
-            <div class="card project">
-              <img src="" alt="">
-              <h3>Pik-Pak Pokémon</h3>
-              <p>Project 1</p>
-              <li><a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-            </div>
+            <div class="card project one">
+              <a href="https://ashlenprice.github.io/tic-tac-toe/">
+              <img src="http://i.imgur.com/2cBEd9vl.png" alt="">
             </a>
-            <a href="https://ashlenprice.github.io/bookienook/">
-            <div class="card project">
-              <img src="" alt="">
+            <h3>Pik-Pak Pokémon</h3>
+            <p>Project description</p>
+            <a href= "https://github.com/AshlenPrice/tic-tac-toe"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="card project two">
+              <a href="https://ashlenprice.github.io/bookienook/">
+              <img src="http://i.imgur.com/LnOUY32l.png" alt="BookieNook">
+            </a>
               <h3>BookieNook</h3>
               <p>Project 2</p>
-              <li><a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <a href= "https://github.com/AshlenPrice/bookienook"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
             </div>
+
+            <div class="card project three">
+              <a href="https://squirtle-squadron.github.io/cms/">
+              <img src="http://i.imgur.com/FH1SYFAl.png" alt="ScribbleBook">
             </a>
-            <a href="https://squirtle-squadron.github.io/cms/">
-            <div class="card project">
-              <img src="" alt="">
               <h3>Scribble-Book</h3>
               <p>Project 3</p>
-              <li><a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <a href= "https://github.com/squirtle-squadron/cms"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
             </div>
-            </a>
-            <a href="#">
-            <div class="card project">
+
+
+            <div class="card project four">
+              <a href="#">
               <img src="" alt="">
+            </a>
               <h3>Capsotne</h3>
               <p>Project 4</p>
-              <li><a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
             </div>
-            </a>
           </section>
-
+<!--  Resume Section -->
           <section class="category" id="resume">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </section>
 
+          <!-- contact section  -->
           <section class="category" id="contact">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </section>
 
-        </section><!-- close portfolio body section -->
 
-      </section>
     </section><!-- close right side of pg section -->
 
     </main>
 
-  </div>
+
 
 </body>
 
