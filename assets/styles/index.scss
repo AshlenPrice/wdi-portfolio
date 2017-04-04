@@ -9,18 +9,19 @@ html {
 }
 
 *,
-*:before, *:after {
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body,
-main {
+body, .wrapper {
   display: flex;
   font-family: $main-font;
   font-size: 16px;
   line-height: 2;
   margin: 0;
   padding: 0;
+  height: 100vw;
 }
 
 a {
@@ -30,13 +31,14 @@ a {
 }
 
 
+//
 // main {
 //   display: flex;
 //   margin-left: 0;
 //   margin-right: 0;
-//   // flex-wrap: wrap;
+//   flex-wrap: wrap;
 // }
-
+// look at the body formatting if need to make changes
 
 // small screens
 @media only screen and (max-width: 900px) {
@@ -47,31 +49,34 @@ a {
 
 aside {
   align-items: center;
+  background-color: $primary-color-light;
+  position: fixed;
   flex: 35vw;
-  // width: 35vw;
-  // height: 100vh;
-  background-image: url('../../img/bckg-half.png');
-  background-size: cover;
-  display: flex;
   justify-content: center;
+  // background-image: url('../../img/bckg-half.png');
+  // background-size: cover;
   padding: 5vw;
   text-align: center;
+  height: 100vh;
+  width: 35vw;
 
 }
 
-.left {
-
+.sidebar {
+  flex: 35vw;
 }
 
-aside img {
-  height: 100%;
-  width: 100%;
-}
+// aside img {
+//   height: 100%;
+//   width: 100%;
+// }
 
 .brand-box {
+
 }
 
 .brand {
+  align-items: center;
 }
 
 .ash {
@@ -90,29 +95,30 @@ h1 {
 }
 
 .rw-wrapper {
+  align-items: center;
 
 }
 
 .rw-words {
   font-family: $signiture-font;
   text-align: center;
+  align-content: center;
 }
 
 // Footer
 footer {
-  // flex-direction: column;
   background-color: $primary-color-text;
   border-top: 1px solid grey;
   color: gray;
   // display: inline-block;
-  padding: 20px;
-  padding-bottom: 40px;
-  // position: fixed;
+  padding-bottom: 3vw;
+  position: fixed;
   text-align: center;
+  align-items: flex-end;
   left: 0px;
   bottom: 0px;
-  height: 20px;
-  // width: 35%;
+  height: 1vw;
+  width: 35vw;
 }
 
 footer > ul {
@@ -123,10 +129,10 @@ footer > ul {
 footer li {
   display: inline-flex;
   padding: 5px;
-  height: 10px;
+  // height: 10px;
   align-content: flex-start;
   // width: 40px;
-  overflow: visible;
+  // overflow: visible;
 }
 
 footer li:hover {
@@ -134,47 +140,47 @@ footer li:hover {
 }
 
 footer > .fa {
+
   color: $divider-color;
+  font-size: 2em;
   text-decoration: none
 }
 
 
 //right side of the page
-
 .right {
-  // align-items: center;
   background-color: $primary-color;
   display: flex;
   flex: 65vw;
+  flex-wrap: wrap;
+  // position: relative;
   overflow: scroll;
+}
+
+section {
+  // align-items: center;
+  // background-color: $primary-color;
+  // display: flex;
+  // flex: 65vw;
+  // flex-wrap: wrap;
+  // overflow: scroll;
   // justify-content: center;
-  // width: 65vw;
   // height: 100vh;
 }
 
-.right-container {
-
-}
-
-.folio-body {
-
-}
-.category {
-}
 
 #about {
-
 }
 
 #skills {
-
-
 }
 
 .category {
 
+  display: flex;
+  flex-wrap: wrap;
   padding: 3vw;
-
+  height: 100vh;
 }
 
 .icon {
@@ -183,7 +189,7 @@ footer > .fa {
 
 
 .card {
-
+  // width: 48%;
   background-color: $primary-color-light;
   flex: 4;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
@@ -199,7 +205,7 @@ footer > .fa {
 }
 
 .project:last-child {
-  margin-bottom: 0;
+  // margin-bottom: 0;
 }
 
 .project img {
@@ -236,8 +242,7 @@ footer > .fa {
 
 nav {
   position: fixed;
-
-
+  align-items: flex-start;
 }
 
 nav > ul{

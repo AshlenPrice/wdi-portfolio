@@ -27,9 +27,24 @@
 
 
 <body>
-    <!-- Main contains the split screen   -->
-    <main class="flex-container container">
+    <!-- wrapper that contains the split screen   -->
+    <div class="wrapper">
+
+      <aside class="navbar-left">
+
+        <a class="company-logo" href="#">Logo</a>
+
+        <div class="sidebar-links">
+          <a class="link-blue" href="#"><i class="fa fa-picture-o"></i>Photography</a>
+          <a class="link-red" href="#"><i class="fa fa-heart-o"></i>Favorites</a>
+          <a class="link-yellow selected" href="#"><i class="fa fa-keyboard-o"></i>Projects</a>
+          <a class="link-green" href="#"><i class="fa fa-map-marker"></i>Places</a>
+      </div>
+
+      </aside>
+
       <!-- Left side of the screen -->
+      <div class="sidebar">
       <aside class="left" id="west">
         <!-- <img src="./img/bckg-half.png"/> -->
         <!-- Container that houses my brand text -->
@@ -68,9 +83,10 @@
         </ul>
         </footer>
       </aside>
+    </div>
 
     <!-- Right side of page -->
-      <section class="right" id="east">
+      <main class="right" id="east">
 
         <header>
           <nav>
@@ -88,6 +104,7 @@
 
           <section class="category" id="about">
             <p>
+              <h1>About me</h1>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -114,6 +131,7 @@
           </section>
 
           <section class="category" id="portfolio">
+            <h1>My Work</h1>
             <div class="card project one">
               <a href="https://ashlenprice.github.io/tic-tac-toe/">
               <img src="http://i.imgur.com/2cBEd9vl.png" alt="">
@@ -154,6 +172,7 @@
 <!--  Resume Section -->
           <section class="category" id="resume">
             <p>
+              <h1>My Resume</h1>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -167,6 +186,7 @@
           <!-- contact section  -->
           <section class="category" id="contact">
             <p>
+              <h1>Contact me</h1>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -178,9 +198,9 @@
           </section>
 
 
-    </section><!-- close right side of pg section -->
+    </main><!-- close right side of pg section -->
 
-    </main>
+  </div>
 
 
 
