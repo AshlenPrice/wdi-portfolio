@@ -23,28 +23,31 @@
 
   <!-- Font Awesome links -->
   <script src="https://use.fontawesome.com/25c6c08225.js"></script>
+
+  <!-- sidebar script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 
 
 <body>
-    <!-- wrapper that contains the split screen   -->
-    <div class="wrapper">
+  <!-- wrapper that contains the split screen   -->
+  <div class="wrapper">
 
-      <aside class="navbar-left">
+    <aside class="navbar-left">
 
-        <a class="company-logo" href="#">Logo</a>
-
-        <div class="sidebar-links">
-          <a class="link-blue" href="#"><i class="fa fa-picture-o"></i>Photography</a>
-          <a class="link-red" href="#"><i class="fa fa-heart-o"></i>Favorites</a>
-          <a class="link-yellow selected" href="#"><i class="fa fa-keyboard-o"></i>Projects</a>
-          <a class="link-green" href="#"><i class="fa fa-map-marker"></i>Places</a>
+      <div class="sidebar-links">
+        <a href="#about" class="link-blue" href="#"><i class="fa fa-user"></i>Home</a>
+        <a href="#skills" class="link-red" href="#"><i class="fa fa-code"></i>Skills</a>
+        <a href="#portfolio" class="link-yellow selected" href="#"><i class="fa fa-briefcase"></i>Pojects</a>
+        <a href="#resume" class="link-green" href="#"><i class="fa fa-file-text-o"></i>Resume</a>
+        <a href="#contact" class="link-green" href="#"><i class="fa fa-envelope-o"></i>Contact Me!</a>
       </div>
 
-      </aside>
+    </aside>
 
-      <!-- Left side of the screen -->
-      <div class="sidebar">
+    <!-- Left side of the screen -->
+    <div class="sidebar">
       <aside class="left" id="west">
         <!-- <img src="./img/bckg-half.png"/> -->
         <!-- Container that houses my brand text -->
@@ -52,9 +55,9 @@
 
           <div class="brand">
             <!-- First Name  -->
-              <h1 class="ash animated bounce">Ashlen</h1>
+            <h1 class="ash animated bounce">Ashlen</h1>
             <!--Last Name -->
-              <h1 class="price">Price</h1>
+            <h1 class="price">Price</h1>
           </div>
           <!-- Houses rotating adjectives  -->
           <div class="rw-wrapper">
@@ -72,133 +75,136 @@
         <!-- Footer , sm & contact ifo -->
         <footer>
           <ul>
-          <li><a href= "https://github.com/AshlenPrice"<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+            <li>
+              <a href="https://github.com/AshlenPrice" <i class="fa fa-github-alt" aria-hidden="true"></i>
+              </a>
+            </li>
 
-          <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 
-          <li><a href="https://www.facebook.com/ashlen.price"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/ashlen.price"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 
-          <li><a href="mailto:ashlen.price@gmail.com"<i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-        <li>  Made by Ash!</li>
-        </ul>
+            <li>
+              <a href="mailto:ashlen.price@gmail.com" <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li> Made by Ash!</li>
+          </ul>
         </footer>
       </aside>
     </div>
 
     <!-- Right side of page -->
-      <main class="right" id="east">
-
-        <header>
-          <nav>
-            <ul>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="mailto:ashlen.price@gmail.com">Contact Me!</a></li>
-              <li><a href="https://github.com/ashlenprice">GitHub</a></li>
-            </ul>
-          </nav>
-        </header>
+    <main class="right" id="east">
 
 
-          <section class="category" id="about">
-            <p>
-              <h1>About me</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </section>
 
-          <section class="category" id="skills">
-            <i class="icon devicon-bootstrap-plain-wordmark colored"></i>
-            <i class="icon devicon-html5-plain-wordmark colored"></i>
-            <i class="icon devicon-javascript-plain colored"></i>
-            <i class="icon devicon-jquery-plain-wordmark colored"></i>
-            <i class="icon devicon-postgresql-plain-wordmark colored"></i>
-            <i class="icon devicon-rails-plain-wordmark colored"></i>
-            <i class="icon devicon-ruby-plain colored"></i>
-            <i class="icon devicon-sass-original colored"></i>
-            <i class="icon devicon-github-plain-wordmark colored"></i>
-            <i class="icon devicon-nodejs-plain colored"></i>
-            <i class="icon devicon-mongodb-plain-wordmark colored"></i>
-            <i class="icon devicon-git-plain-wordmark colored"></i>
-          </section>
+      <section class="category" id="about">
+        <p>
+          <h1>About me</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
 
-          <section class="category" id="portfolio">
-            <h1>My Work</h1>
-            <div class="card project one">
-              <a href="https://ashlenprice.github.io/tic-tac-toe/">
-              <img src="http://i.imgur.com/2cBEd9vl.png" alt="">
-            </a>
-            <h3>Pik-Pak Pokémon</h3>
-            <p>Project description</p>
-            <a href= "https://github.com/AshlenPrice/tic-tac-toe"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
+      <section class="category" id="skills">
+        <i class="icon devicon-bootstrap-plain-wordmark colored"></i>
+        <i class="icon devicon-html5-plain-wordmark colored"></i>
+        <i class="icon devicon-javascript-plain colored"></i>
+        <i class="icon devicon-jquery-plain-wordmark colored"></i>
+        <i class="icon devicon-postgresql-plain-wordmark colored"></i>
+        <i class="icon devicon-rails-plain-wordmark colored"></i>
+        <i class="icon devicon-ruby-plain colored"></i>
+        <i class="icon devicon-sass-original colored"></i>
+        <i class="icon devicon-github-plain-wordmark colored"></i>
+        <i class="icon devicon-nodejs-plain colored"></i>
+        <i class="icon devicon-mongodb-plain-wordmark colored"></i>
+        <i class="icon devicon-git-plain-wordmark colored"></i>
+      </section>
+
+      <section class="category" id="portfolio">
+        <h1>My Work</h1>
+        <div class="card project one">
+          <a href="https://ashlenprice.github.io/tic-tac-toe/">
+            <img src="http://i.imgur.com/2cBEd9vl.png" alt="">
+          </a>
+          <h3>Pik-Pak Pokémon</h3>
+          <p>Project description</p>
+          <a href="https://github.com/AshlenPrice/tic-tac-toe" <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="card project two">
+          <a href="https://ashlenprice.github.io/bookienook/">
+            <img src="http://i.imgur.com/LnOUY32l.png" alt="BookieNook">
+          </a>
+          <h3>BookieNook</h3>
+          <p>Project 2</p>
+          <a href="https://github.com/AshlenPrice/bookienook" <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="card project three">
+          <a href="https://squirtle-squadron.github.io/cms/">
+            <img src="http://i.imgur.com/FH1SYFAl.png" alt="ScribbleBook">
+          </a>
+          <h3>Scribble-Book</h3>
+          <p>Project 3</p>
+          <a href="https://github.com/squirtle-squadron/cms" <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+
+
+        <div class="card project four">
+          <a href="#">
+            <img src="" alt="">
+          </a>
+          <h3>Capsotne</h3>
+          <p>Project 4</p>
+          <a href="#" <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+      <!--  Resume Section -->
+      <section class="category" id="resume">
+        <p>
+          <h1>My Resume</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <!-- contact section  -->
+      <section class="category" id="contact">
+        <article id="contact" class="panel">
+          <header>
+            <h2>Contact Me</h2>
+          </header>
+          <form method="POST" action="http://formspree.io/ashlen.price@gmail.com">
+            <div>
+              <div class="row">
+                <div class="name">
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="email">
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="subject">
+                  <input type="text" name="subject" placeholder="Subject" />
+                </div>
+                <div class="message">
+                  <textarea name="message" placeholder="Message" rows="8"></textarea>
+                </div>
+                <div class="send-btn">
+                  <input type="submit" value="Send Message" />
+                </div>
+              </div>
             </div>
-
-            <div class="card project two">
-              <a href="https://ashlenprice.github.io/bookienook/">
-              <img src="http://i.imgur.com/LnOUY32l.png" alt="BookieNook">
-            </a>
-              <h3>BookieNook</h3>
-              <p>Project 2</p>
-              <a href= "https://github.com/AshlenPrice/bookienook"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
-            </div>
-
-            <div class="card project three">
-              <a href="https://squirtle-squadron.github.io/cms/">
-              <img src="http://i.imgur.com/FH1SYFAl.png" alt="ScribbleBook">
-            </a>
-              <h3>Scribble-Book</h3>
-              <p>Project 3</p>
-              <a href= "https://github.com/squirtle-squadron/cms"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
-            </div>
+          </form>
+        </article>
+      </section>
 
 
-            <div class="card project four">
-              <a href="#">
-              <img src="" alt="">
-            </a>
-              <h3>Capsotne</h3>
-              <p>Project 4</p>
-              <a href= "#"<i class="fa fa-github-alt" aria-hidden="true"></i></a>
-            </div>
-          </section>
-<!--  Resume Section -->
-          <section class="category" id="resume">
-            <p>
-              <h1>My Resume</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </section>
-
-          <!-- contact section  -->
-          <section class="category" id="contact">
-            <p>
-              <h1>Contact me</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </section>
-
-
-    </main><!-- close right side of pg section -->
+    </main>
+    <!-- close right side of pg section -->
 
   </div>
 
