@@ -1,0 +1,250 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'typography';
+@import 'colors';
+@import 'animations';
+@import 'navbar';
+// General Formatting //
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+   background-image: url('../../img/wood-bg.png');
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $accent-color;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  margin: 5%;
+
+}
+// small screens
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    align-items: center;
+    background-color: $primary-color-light;
+    // background-image: url('../../img/bckg-half.png');
+    // background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vw;
+    text-align: center;
+  }
+}
+.sidebar {
+  align-items: center;
+  align-content: center;
+  background-color: $primary-color-light;
+  // background-image: url('../../img/bckg-half.png');
+  // background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand-box {
+
+}
+
+.brand {
+}
+
+.ash {
+  font-family: $header-font;
+  text-align: center;
+}
+
+.price {
+  font-family: $scroll-font;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.rw-wrapper {
+  align-items: center;
+  font-size: 1em;
+
+}
+
+.rw-words {
+  font-family: $signiture-font;
+  text-align: center;
+  align-content: center;
+}
+// // Footer
+// footer {
+//   // display: inline-block;
+//   padding-bottom: 3vw;
+//   position: fixed;
+//   text-align: center;
+//   align-items: flex-end;
+//   left: 0px;
+//   bottom: 0px;
+//   height: 1vw;
+//   width: 35vw;
+// }
+//
+// footer > ul {
+//   list-style-type: none;
+//   padding: 5px;
+// }
+//
+// footer li {
+//   display: inline-flex;
+//   padding: 5px;
+//   // height: 10px;
+//   align-content: flex-start;
+//   // width: 40px;
+//   // overflow: visible;
+// }
+//
+// footer li:hover {
+//   color: $accent-color;
+// }
+//
+// footer > .fa {
+//
+//   color: $divider-color;
+//   font-size: 2em;
+//   text-decoration: none
+// }
+//right side of the page
+.right {
+  background-color: $primary-color;
+  display: flex;
+  flex: 65vw;
+  flex-wrap: wrap;
+  // position: relative;
+  overflow: scroll;
+  justify-content: center;
+}
+
+section {
+  align-items: center;
+  background-color: $primary-color;
+  display: flex;
+  flex: 65vw;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+}
+
+#about {}
+
+#skills {
+display: flex;
+align-content: space-around;
+}
+.category > h1 {
+  align-items: center;
+  margin: 5%;
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vw;
+  height: 75vh;
+}
+
+.icon {
+  font-size: 4em;
+}
+
+.card {
+  background-color: $primary-color-light;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+.project {
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.project h3 {
+  margin: 0.75em 0 0.5em;
+}
+
+.project p {
+  padding: 0 0 1em;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.project > .fa {
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+#resume {
+
+}
+
+#contact {}
+//
+// nav {
+//   position: fixed;
+//   align-items: flex-start;
+// }
+//
+// nav > ul{
+//   display: inline-flex;
+//   list-style-type: none;
+// }
+//
+// nav a {
+//   color: $primary-color-text;
+//   // display: inline-block;
+//   font-size: 1em;
+//   padding: .5em .5em;
+//   transition: background 2s;
+// }
+//
+// nav a:hover {
+//   background: $accent-color;
+// }

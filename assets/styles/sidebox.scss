@@ -1,0 +1,149 @@
+@import 'variables';
+
+/**
+ * Side Box
+ */
+#crt-side-box {
+  transition: top 300ms ease-out;
+}
+
+.crt-side-box-btn {
+  padding: 20px;
+
+  .btn {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $screen-md) {
+  #crt-side-box-wrap {
+    width: $side-box-width;
+    float: left;
+  }
+
+
+  .crt-side-box-item {
+    background-color: $color-lighter;
+    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .crt-side-box-cont {
+    padding: 20px;
+  }
+
+  .crt-side-box-btn {
+    padding: 40px 35px;
+  }
+}
+
+
+
+/**
+ * User Card
+ */
+.crt-card {
+  padding: 30px 20px 20px 20px;
+}
+
+.crt-card-info {
+  margin-top: 33px;
+
+  h2 {
+    font-size: 1.625em;
+    margin-bottom: 0.688em;
+  }
+
+  .crt-social {
+    margin-bottom: 0;
+  }
+}
+
+// Card Wide Mode
+@media (min-width: $screen-md) {
+  .crt-card-wide {
+    width: 100%;
+    display: table;
+    padding: 50px 6%;
+
+    .crt-card-avatar,
+    .crt-card-info {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .crt-card-avatar {
+      width: 195px;
+      max-width: 195px;
+    }
+
+    .crt-social {
+      margin-top: 30px;
+    }
+
+    .crt-card-info {
+      text-align: left;
+      padding-left: 8%;
+      padding-top: 1.250em;
+
+      h2 {
+        font-size: 2.688em;
+        margin-bottom: 0.2em;
+      }
+    }
+  }
+}
+
+/**
+ * Avatars
+ */
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar-42 {
+  width: 42px;
+  height: 42px;
+}
+
+.avatar-195 {
+  width: 195px;
+  height: 195px;
+}
+
+/**
+ * Social Icons
+ */
+
+.crt-social {
+  margin: $base-space -12px;
+
+  li {
+    margin: 5px 12px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .crt-icon {
+    font-size: 1.250em;
+  }
+
+}
+
+.clear-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+// TODO:
+// FIGURE OUT WHICH AVATAR TYPE I PREFRER
+// CLEAN OUT UNNECESSARY CODE

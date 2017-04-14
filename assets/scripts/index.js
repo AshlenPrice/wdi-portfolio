@@ -6,20 +6,6 @@ const config = require('./config');
 $(() => {
   setAPIOrigin(location, config);
 
-
-  $(function () {
-
-    var links = $('.sidebar-links > a');
-
-    links.on('click', function () {
-
-      links.removeClass('selected');
-      $(this).addClass('selected');
-
-    })
-  });
-
-
 });
 
 // use require with a reference to bundle the file and use it in this file
