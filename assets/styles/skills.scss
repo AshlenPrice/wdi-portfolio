@@ -1,0 +1,31 @@
+
+/**
+ * Section: Skills
+ */
+
+
+
+/**
+ * Section: Clients
+ */
+.skill-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  text-align: justify;
+  &:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+  li {
+    width: 20%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 70px;
+    padding: 0 5px;
+  }
+  .icon {
+    font-size: 4em;
+  }
+}

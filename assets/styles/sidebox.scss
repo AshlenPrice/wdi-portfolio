@@ -143,7 +143,51 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
+
+.crt-sidebar-on {
+  @media (min-width: $screen-md) {
+    .crt-head-col {
+      height: 50px;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    &.crt-side-box-on {
+      #crt-header {
+        .crt-container-sm {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $container + $side-box-width + $side-box-space  + $tab-nav-width + 180) {
+    &.crt-side-box-on.crt-nav-on {
+      #crt-sidebar-btn {
+        position: absolute;
+        right: 0;
+        top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $container + $side-box-width + $side-box-space + $tab-nav-width + 179) {
+    &.crt-side-box-on.crt-nav-on {
+      #crt-header {
+        .crt-container-sm {
+          margin-right: 0;
+        }
+      }
+
+      #crt-head-col3 {
+        width: 70px; // #crt-sidebar-btn width + 20
+      }
+    }
+  }
+}
+
 // TODO:
 // FIGURE OUT WHICH AVATAR TYPE I PREFRER
 // CLEAN OUT UNNECESSARY CODE

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="crt crt-side-box-on crt-main-nav-on crt-sidebar-on crt-layers-1">
 
 <head>
   <meta charset="utf-8">
@@ -27,86 +27,414 @@
   <!-- sidebar script -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+
 </head>
 
 
 <body>
 
-  <!-- wrapper that contains the split screen   -->
-  <div class="wrapper">
-<!--side profile card -->
+  <div class="crt-wrapper">
+    <!--side profile card -->
+    <div id="crt-container" class="crt-container">
     <div id="crt-side-box-wrap" class="crt-sticky">
-        <div id="crt-side-box">
+      <div id="crt-side-box">
 
-            <div class="crt-side-box-item">
+        <div class="crt-side-box-item">
 
-                <div class="crt-card bg-primary text-center">
-                    <div class="crt-card-avatar">
-                        <img class="avatar avatar-195" src="/img/me.jpeg"
-                          width="195" height="195" alt="">
-                    </div>
-                    <div class="crt-card-info">
-                        <h2 class="text-upper">Ashlen Price</h2>
-
-                        <p class="text-muted">Full Stack Web Developer</p>
-
-                        <ul class="crt-social clear-list">
-                            <li><a href="https://github.com/AshlenPrice"><span class="crt-icon fa fa-github-alt"></span></a></li>
-                            <li><a href="https://www.linkedin.com/in/ashlenprice/"><span class="crt-icon fa fa-linkedin"></span></a></li>
-                            <li><a href="mailto:ashlen.price@gmail.com"><span class="crt-icon fa fa-envelope-o"></span></a></li>
-                            <li><a href="https://www.facebook.com/ashlen.price"><span class="crt-icon fa fa-facebook"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="crt-side-box-btn">
-                    <a class="btn btn-default btn-lg btn-block btn-thin btn-upper" href="/ash_cv1.pdf" download="ash_cv.pdf">Download Resume</a>
-                </div>
+          <div class="crt-card bg-primary text-center">
+            <div class="crt-card-avatar">
+              <img class="avatar avatar-195" src="/img/me.jpeg" width="195" height="195" alt="">
             </div>
-            <!-- .crt-side-box-item -->
+            <div class="crt-card-info">
+              <h2 class="text-upper">Ashlen Price</h2>
 
+              <p class="text-muted">Full Stack Web Developer</p>
+
+              <ul class="crt-social clear-list">
+                <li><a href="https://github.com/AshlenPrice"><span class="crt-icon fa fa-github-alt"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/ashlenprice/"><span class="crt-icon fa fa-linkedin"></span></a></li>
+                <li><a href="mailto:ashlen.price@gmail.com"><span class="crt-icon fa fa-envelope-o"></span></a></li>
+                <li><a href="https://www.facebook.com/ashlen.price"><span class="crt-icon fa fa-facebook"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="crt-side-box-btn">
+            <a class="btn btn-default btn-lg btn-block btn-thin btn-upper" href="/ash_cv1.pdf" download="ash_cv.pdf">Download Resume</a>
+          </div>
         </div>
-        <!-- #crt-side-box -->
+        <!-- .crt-side-box-item -->
+
+      </div>
+      <!-- #crt-side-box -->
     </div>
 
     <!-- #crt-side-box-wrap -->
-<div id="crt-nav-wrap" class="hidden-sm hidden-xs">
-    <div id="crt-nav-inner">
+    <div id="crt-nav-wrap" class="hidden-sm hidden-xs">
+      <div id="crt-nav-inner">
         <div class="crt-nav-cont">
-            <div id="crt-nav-scroll">
-                <nav id="crt-nav" class="crt-nav">
-                    <ul class="clear-list">
-                        <li>
-                            <a href="index.html#about" data-tooltip="Home"><span class="crt-icon fa fa-user"></span></a>
-                        </li>
-                        <li>
-                            <a href="index.html#skills" data-tooltip="Skills"><span class="crt-icon fa fa-code"></span></a>
-                        </li>
-                        <li>
-                            <a href="index.html#portfolio" data-tooltip="Portfolio"><span class="crt-icon fa fa-briefcase"></span></a>
-                        </li>
-                        <li>
-                          <a href="index.html#experience" data-tooltip="Experience"><span class="crt-icon fa fa-file-text-o"></span></a>
-                        </li>
-                        <li>
-                            <a href="index.html#contact" data-tooltip="Contact"><span class="crt-icon fa fa-envelope-o"></span></a>
-                        </li>
+          <div id="crt-nav-scroll">
+            <nav id="crt-nav" class="crt-nav">
+              <ul class="clear-list">
+                <li>
+                  <a href="#about" data-tooltip="Home"><span class="crt-icon fa fa-user"></span></a>
+                </li>
+                <li>
+                  <a href="#skills" data-tooltip="Skills"><span class="crt-icon fa fa-code"></span></a>
+                </li>
+                <li>
+                  <a href="#portfolio" data-tooltip="Portfolio"><span class="crt-icon fa fa-briefcase"></span></a>
+                </li>
+                <li>
+                  <a href="#experience" data-tooltip="Experience"><span class="crt-icon fa fa-file-text-o"></span></a>
+                </li>
+                <li>
+                  <a href="#contact" data-tooltip="Contact"><span class="crt-icon fa fa-envelope-o"></span></a>
+                </li>
 
-                    </ul>
-                </nav>
-            </div>
+              </ul>
+            </nav>
+          </div>
 
-            <div id="crt-nav-tools" class="hidden">
-                <span class="crt-icon crt-icon-dots-three-horizontal"></span>
+          <div id="crt-nav-tools" class="hidden">
+            <span class="crt-icon crt-icon-dots-three-horizontal"></span>
 
-                <button id="crt-nav-arrow" class="clear-btn">
+            <button id="crt-nav-arrow" class="clear-btn">
                     <span class="crt-icon crt-icon-chevron-thin-down"></span>
                 </button>
-            </div>
+          </div>
         </div>
         <div class="crt-nav-btm"></div>
+      </div>
     </div>
-</div>
-    <!-- <aside class="navbar-left">
+
+    <div class="crt-container-sm">
+      <div id="about" class="crt-paper-layers crt-animate">
+        <div class="crt-paper clearfix">
+          <div class="crt-paper-cont paper-padd clear-mrg">
+            <section class="section brd-btm padd-box">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="title-lg text-upper">About Me</h2>
+                  <div class="text-box">
+                    <p>
+                      <b>Hey I'm Ash!</b>
+                      <br>
+                      I’m a Boston based full stack web developer with extensive experience community organizing, project and relationship management, and training.
+                      I’m a knowledge-hungry learner, always eager to find innovative ways to solve challenges and bring ideas to life through code.
+                      Looking to bring my skills and  continue my growth as a developer working on a team that is passionate about what they do.
+                    </p>
+                  </div>
+                </div>
+              </div> <!-- .row end-->
+            </section> <!-- .section -->
+          </div>  <!-- .crt-paper-cont -->
+        </div>  <!-- .crt-paper clearfix end -->
+      </div> <!-- About section end -->
+
+      <div id="skills" class="crt-paper-layers crt-animate">
+          <div class="crt-paper clearfix">
+              <div class="crt-paper-cont paper-padd clear-mrg">
+
+                  <section class="section padd-box">
+                      <h2 class="title-lg text-upper">Skills</h2>
+                  </section>
+                  <!-- .section -->
+
+                  <section class="section clear-mrg padd-box">
+                      <h2 class="title-lg text-upper">Clients</h2>
+                      <div class="padd-box-sm">
+                          <ul class="skill-list">
+                              <li><i class="icon devicon-bootstrap-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-html5-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-javascript-plain colored"></i></li>
+                              <li><i class="icon devicon-jquery-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-postgresql-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-rails-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-ruby-plain colored"></i></li>
+                              <li><i class="icon devicon-sass-original colored"></i></li>
+                              <li><i class="icon devicon-github-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-nodejs-plain colored"></i></li>
+                              <li><i class="icon devicon-mongodb-plain-wordmark colored"></i></li>
+                              <li><i class="icon devicon-git-plain-wordmark colored"></i></li>
+                          </ul>
+
+
+                      </div><!-- .padd-box-sm -->
+                  </section><!-- .section -->
+
+              </div>
+              <!-- .crt-paper-cont -->
+          </div>
+          <!-- .crt-paper -->
+      </div>
+      <!-- .crt-paper-layers -->
+
+
+      <div id="portfolio" class="crt-paper-layers crt-animate">
+        <div class="crt-paper clearfix">
+          <div class="crt-paper-cont paper-padd clear-mrg">
+
+            <section class="section padd-box">
+              <h2 class="title-lg text-upper padd-box">portfolio</h2>
+
+              <div class="pf-wrap">
+                <!-- <div class="pf-filter padd-box">
+                            <button data-filter="*">all</button>
+                            <button data-filter=".photography">photography</button>
+                            <button data-filter=".design">design</button>
+                        </div> -->
+                <!-- .pf-filter -->
+
+                <div class="pf-grid">
+                  <div class="pf-grid-sizer"></div>
+                  <!-- used for sizing -->
+                  <!--PROJECT 1  -->
+
+                  <div class="pf-grid-item photography">
+                    <a class="pf-project">
+                      <figure class="pf-figure">
+                        <img src="http://i.imgur.com/2cBEd9vl.png" alt="">
+                      </figure>
+
+                      <div class="pf-caption text-center">
+                        <div class="valign-table">
+                          <div class="valign-cell">
+                            <h2 class="pf-title text-upper">stu unger rise</h2>
+
+                            <div class="pf-text clear-mrg">
+                              <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                            </div>
+
+                            <button class="pf-btn btn btn-primary">View More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .pf-project -->
+
+
+                    <!-- .pf-grid-item -->
+                    <!-- PROJECT 2 -->
+                    <div class="pf-grid-item design">
+                      <a class="pf-project">
+                        <figure class="pf-figure">
+                          <img src="http://i.imgur.com/LnOUY32l.png" alt="BookieNook">
+                        </figure>
+
+                        <div class="pf-caption text-center">
+                          <div class="valign-table">
+                            <div class="valign-cell">
+                              <h2 class="pf-title text-upper">stu unger rise</h2>
+
+                              <div class="pf-text clear-mrg">
+                                <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                              </div>
+
+                              <button class="pf-btn btn btn-primary">View More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- .pf-project -->
+
+                    </div>
+                    <!-- .pf-grid-item -->
+                    <!-- PROJECT 3 -->
+
+                    <div class="pf-grid-item photography">
+                      <a class="pf-project">
+                        <figure class="pf-figure">
+                          <img src="http://i.imgur.com/FH1SYFAl.png" alt="ScribbleBook">
+                        </figure>
+
+                        <div class="pf-caption text-center">
+                          <div class="valign-table">
+                            <div class="valign-cell">
+                              <h2 class="pf-title text-upper">stu unger rise</h2>
+
+                              <div class="pf-text clear-mrg">
+                                <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                              </div>
+
+                              <button class="pf-btn btn btn-primary">View More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- .pf-project -->
+
+                    </div>
+                    <!-- .pf-grid-item -->
+
+                    <div class="pf-grid-item design">
+                      <a class="pf-project">
+                        <figure class="pf-figure">
+                          <img src="assets/images/uploads/portfolio/prj-04.jpg" alt="">
+                        </figure>
+
+                        <div class="pf-caption text-center">
+                          <div class="valign-table">
+                            <div class="valign-cell">
+                              <h2 class="pf-title text-upper">stunger rise</h2>
+
+                              <div class="pf-text">
+                                <p>Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more</p>
+                              </div>
+
+                              <button class="pf-btn btn btn-primary">View More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- .pf-project -->
+                    </div>
+                    <!-- .pf-grid-item -->
+                  </div>
+                </div>
+              </div>
+              <!-- .pf-wrap -->
+            </section>
+            <!-- .section -->
+
+          </div>
+          <!-- .crt-paper-cont -->
+        </div>
+        <!-- .crt-paper -->
+      </div>
+      <!-- Portfolio -->
+
+      <div id="experience" class="crt-paper-layers crt-animate">
+          <div class="crt-paper clearfix">
+              <div class="crt-paper-cont paper-padd clear-mrg">
+
+                  <section class="section padd-box">
+                      <h2 class="title-lg text-upper">work experience</h2>
+                      <div class="education">
+
+                          <div class="education-box">
+                              <time class="education-date" datetime="2014-01T2016-03">
+                                  <span>Jan <strong class="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                              </time>
+                              <h3>Full Stack Developer</h3>
+                              <div class="education-logo">
+                                  <img src="assets/images/uploads/experience/logo-audio-jungle.png" alt="">
+                              </div>
+                              <span class="education-company">IBBA Group</span>
+                              <p>Your brand is the core of your marketing,
+                                  the central theme around your products and services.
+                                  Your brand is not your Logo or your Company Name
+                              </p>
+                          </div>
+                          <!-- .education-box -->
+
+                          <div class="education-box">
+                              <time class="education-date" datetime="2014-01T2016-03">
+                                  <span>Jan <strong class="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                              </time>
+                              <h3>Systems Analyst / Web Developer</h3>
+                              <div class="education-logo">
+                                  <img src="assets/images/uploads/experience/logo-themeforest.png" alt="">
+                              </div>
+                              <span class="education-company">Loft Studio</span>
+                              <p>
+                                  Your brand is the core of your marketing, the central theme around your products and services.
+                              </p>
+                          </div>
+                          <!-- .education-box -->
+
+                          <div class="education-box">
+                              <time class="education-date" datetime="2014-01T2016-03">
+                                  <span>Jan <strong class="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                              </time>
+                              <h3>Full Stack Developer</h3>
+                              <div class="education-logo">
+                                  <img src="assets/images/uploads/experience/logo-envato.png" alt="">
+                              </div>
+                              <span class="education-company">Stu Unger Rise</span>
+                              <p>Your brand is the core of your marketing, the central theme around your products and services.</p>
+                          </div>
+                          <!-- .education-box -->
+
+                      </div>
+                      <!-- .education -->
+                  </section>
+                  <!-- .section -->
+
+              </div>
+              <!-- .crt-paper-cont -->
+          </div>
+          <!-- .crt-paper -->
+      </div>
+      <!-- .crt-paper-layers -->
+
+
+          <div id="contact" class="crt-paper-layers crt-animate">
+              <div class="crt-paper clearfix">
+                  <div class="crt-paper-cont paper-padd clear-mrg">
+                      <div class="padd-box">
+                          <h2 class="title-lg text-upper">contact me</h2>
+
+                          <div class="padd-box-xs">
+                              <header class="contact-head">
+                                  <ul class="crt-social clear-list text-primary">
+                                      <li><a><span class="crt-icon crt-icon-facebook"></span></a></li>
+                                      <li><a><span class="crt-icon crt-icon-twitter"></span></a></li>
+                                      <li><a><span class="crt-icon crt-icon-google-plus"></span></a></li>
+                                      <li><a><span class="crt-icon crt-icon-instagram"></span></a></li>
+                                      <li><a><span class="crt-icon crt-icon-pinterest"></span></a></li>
+                                  </ul>
+                                  <h3 class="title text-upper">fell free to contact me the core of your marketing</h3>
+                              </header>
+                          </div>
+
+                          <div class="padd-box-sm">
+                              <form action="#" method="post" class="contact-form">
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="author">Your Name</label>
+                                      <div class="form-item-wrap">
+                                          <input id="author" class="form-item" type="text">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="email">Your E-mail</label>
+                                      <div class="form-item-wrap">
+                                          <input id="email" class="form-item" type="email" required="required">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="url">Subject</label>
+                                      <div class="form-item-wrap">
+                                          <input id="url" class="form-item" type="url">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="comment">Your Comment</label>
+                                      <div class="form-item-wrap">
+                                          <textarea id="comment" class="form-item"></textarea>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-submit form-item-wrap">
+                                      <input class="btn btn-primary btn-lg" type="submit" value="Post Your Comment">
+                                  </div>
+                              </form>
+                          </div>
+                      </div><!-- .padd-box -->
+
+                      <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
+                  </div>
+                  <!-- .crt-paper-cont -->
+              </div>
+              <!-- .crt-paper -->
+          </div>
+
+
+
+      <!-- <aside class="navbar-left">
 
       <div class="sidebar-links">
         <a href="#about" class="link-blue" href="#"><i class="fa fa-user"></i><span>Home</span></a>
@@ -118,21 +446,21 @@
 
     </aside> -->
 
-    <!-- Left side of the screen -->
-    <!-- <div class="sidebar">
+      <!-- Left side of the screen -->
+      <!-- <div class="sidebar">
       <aside class="left" id="west"> -->
-        <!-- <img src="./img/bckg-half.png"/> -->
-        <!-- Container that houses my brand text -->
-        <!-- <div class="brand-box">
+      <!-- <img src="./img/bckg-half.png"/> -->
+      <!-- Container that houses my brand text -->
+      <!-- <div class="brand-box">
 
           <div class="brand"> -->
-            <!-- First Name  -->
-            <!-- <h1 class="ash">Ashlen</h1> -->
-            <!--Last Name -->
-            <!-- <h1 class="price">Price</h1>
+      <!-- First Name  -->
+      <!-- <h1 class="ash">Ashlen</h1> -->
+      <!--Last Name -->
+      <!-- <h1 class="price">Price</h1>
           </div> -->
-          <!-- Houses rotating adjectives  -->
-          <!-- <div class="rw-wrapper">
+      <!-- Houses rotating adjectives  -->
+      <!-- <div class="rw-wrapper">
             <div class="rw-words rw-words-1">
               <span>Full-Stack Web Developer</span>
               <span>Fun-Enthusiast</span>
@@ -144,8 +472,8 @@
           </div>
         </div> -->
 
-        <!-- Footer , sm & contact ifo -->
-        <!-- <footer>
+      <!-- Footer , sm & contact ifo -->
+      <!-- <footer>
           <ul>
             <li>
               <a href="https://github.com/AshlenPrice" <i class="fa fa-github-alt" aria-hidden="true"></i>
@@ -166,8 +494,8 @@
       <!-- </aside>
     </div> -->
 
-    <!-- Right side of page -->
-    <!-- <main class="right" id="east">
+      <!-- Right side of page -->
+      <!-- <main class="right" id="east">
 
 
 
@@ -276,15 +604,16 @@
 
 
     </main> -->
-    <!-- close right side of pg section -->
+      <!-- close right side of pg section -->
 
-    <svg id="bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+      <svg id="bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
         <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"/>
     </svg>
 
-    <svg id="bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+      <svg id="bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
         <polygon points="0,0,633,0,633,536"/>
     </svg>
+    </div>
   </div>
 
 
