@@ -1,8 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import 'typography';
 @import 'buttons';
-@import 'animations';
+// @import 'animations';
 @import 'background_shapes';
 @import 'sidebox';
 @import 'variables';
@@ -34,20 +33,20 @@ html {
 // Remove default margin
 // Set site default font styles
 body {
+  font-family: $main-font;
   font-size: $base-font-size;
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 // Correct `block` display not defined for any HTML5 element in IE 8/9.
 // Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
 // Correct `block` display not defined for `main` in IE 11.
-article,
-aside,
-details,
-figcaption,
+
+
 figure,
 footer,
 header,
@@ -120,7 +119,41 @@ a {
 
 
 
-// Text Box
+// Text Box to about me section
 .text-box {
   line-height: 1.875em;
+}
+
+
+/**
+ * Header
+ */
+#crt-header {
+  position: relative;
+}
+
+.crt-head-inner {
+  position: static;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  @media (min-width: $screen-md) {
+    & {
+      border: none;
+      background: transparent !important;
+    }
+  }
+}
+
+
+/**
+ * Footer
+ */
+
+#crt-footer {
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

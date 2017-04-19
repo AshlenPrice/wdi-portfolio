@@ -20,3 +20,76 @@
   padding-top: 41%;
   margin-top: 50px;
 }
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+h4 {
+  line-height: 1.4em;
+}
+
+select,
+textarea,
+input[type='url'],
+input[type='tel'],
+input[type='time'],
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='password'],
+input[type='week'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+.form-item {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  line-height: 20px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  background-image: none;
+  border: 1px solid transparent;
+  transition: border 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.form-item.error {
+  border-color: #fa958b
+}
+
+.form-label {
+  display: block;
+  line-height: 1.1em;
+  font-size: 0.82em;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+
+textarea.form-item {
+  height: 150px;
+}
+
+.form-submit {
+  margin-top: 2.1em;
+}
+
+@media(min-width: $screen-sm){
+  .form-label {
+    width: 100px;
+    float: left;
+    padding-top: 0.513em;
+    text-align: right;
+  }
+
+  .form-item-wrap {
+    margin-left: 125px;
+  }
+}
